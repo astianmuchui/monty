@@ -1,4 +1,4 @@
-## MONTY Bytecode Interpreter
+## Monty Bytecode Interpreter
 
 ```sh
 . This is a basic bytecode interpreter for .m files
@@ -7,13 +7,6 @@
 
 Written by `sebastian muchui`
 
-#### Compilation
-
-```sh
-gcc -Wall -pedantic -Werror -Wextra std=gnu89 *.c -o monty
-```
-
-
 ## Introduction
 
 Monty 0.98 is a scripting language that is first compiled into Monty byte codes (Just like Python). It relies on a unique stack, with specific instructions to manipulate it. The goal of this project is to create an interpreter for Monty ByteCodes files.
@@ -21,6 +14,13 @@ Monty 0.98 is a scripting language that is first compiled into Monty byte codes 
 Monty byte code files
 
 Files containing Monty byte codes usually have the .m extension. Most of the industry uses this standard but it is not required by the specification of the language. There is not more than one instruction per line. There can be any number of spaces before or after the opcode and its argument:
+
+#### Compilation
+
+```sh
+gcc -Wall -pedantic -Werror -Wextra std=gnu89 *.c -o monty
+```
+
 
 #### Data Structures
 
