@@ -45,7 +45,7 @@ void pchar(stack_t **stack, unsigned int line_number)
 	if (*stack)
 	{
 		if ((*stack)->n >= 0 && (*stack)->n <= 127)
-			printf("%c\n", (*stack)->n);
+			fprintf(stdout, "%c\n", (*stack)->n);
 		else
 		{
 			fprintf(stderr, "L%d: can't pchar, value out of range\n", line_number);
@@ -75,7 +75,7 @@ void pstr(stack_t **stack, unsigned int line_number)
 	while (tmp)
 	{
 		if (tmp->n >= 0 && tmp->n <= 127)
-			printf("%c", tmp->n);
+			fprintf(stdout, "%c", tmp->n);
 		else
 			break;
 		tmp = tmp->next;

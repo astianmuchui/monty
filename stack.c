@@ -47,7 +47,7 @@ void print_stack(stack_t **stack, unsigned int line_number)
 
 	while (tmp) /* Traverse */
 	{
-		printf("%d\n", tmp->n);
+		fprintf(stdout, "%d\n", tmp->n);
 		tmp = tmp->next;
 	}
 }
@@ -64,7 +64,7 @@ void peek(stack_t **stack, unsigned int line_number)
 	(void) line_number;
 
 	if (*stack)
-		printf("%d\n", (*stack)->n);
+		fprintf(stdout, "%d\n", (*stack)->n);
 	else
 	{
 		fprintf(stderr, "L%d: can't peek, stack empty\n", line_number);
