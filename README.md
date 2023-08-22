@@ -61,11 +61,11 @@ typedef struct instruction_s
 #### List of fundamental commands
 
 ```sh
-        push - pushes a new item to the stack
-        pall - prints all elements in the stack in LIFO order
-        pint - prints the top
-        pop - removes the top element
-        swap - swaps the top 2 elements
-        add - adds the top 2 elements
-        nop - basically does nothing
+push - pushes a new item to the stack
+pall - prints all elements in the stack in LIFO order
+pint - prints the top
+pop - removes the top element
+swap - swaps the top 2 elements
+add - adds the top 2 elements
+nop - basically does nothing
 ```
