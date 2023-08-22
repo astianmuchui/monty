@@ -21,6 +21,13 @@ Files containing Monty byte codes usually have the .m extension. Most of the ind
 gcc -Wall -pedantic -Werror -Wextra std=gnu89 *.c -o monty
 ```
 
+#### Usage
+
+```sh
+monty <filename>
+```
+
+The file path should be relative to the monty executable
 
 #### Data Structures
 
