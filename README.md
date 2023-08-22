@@ -1,7 +1,7 @@
 ## Monty Bytecode Interpreter
 
 ```sh
-. This is a basic bytecode interpreter for .m files
+. This is a bytecode interpreter for .m files
 . Implements stacks, queues LIFO, FIFO
 ```
 
