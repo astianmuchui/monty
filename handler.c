@@ -91,7 +91,6 @@ void perform_exec(FILE *file, instruction_t opts[])
 		}
 		line_number++;
 		args = get_token(line);
-
 		if (args == NULL)
 		{
 			line_number++;
@@ -102,8 +101,14 @@ void perform_exec(FILE *file, instruction_t opts[])
 			if (strcmp(args[0], opts[i].opcode) == 0)
 			{
 				if (strcmp(args[0], "push") == 0)
+				{
 					data_t = atoi(args[1]);
-
+					if (data_t == 0 && strcmp(args[1], "0") != 0)
+					{
+						fprintf(stderr, "L%d: usage: push integer\n", line_number);
+						exit(EXIT_FAILURE);
+					}
+				}
 				opts[i].f(&top, line_number);
 				break;
 			}
